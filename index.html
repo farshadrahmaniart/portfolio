@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>فرشاد رحمانی — طراح محصول (UI/UX) | نمونه‌کار</title>
+<meta name="description" content="نمونه‌کار فرشاد رحمانی: طراحی سه وب‌سایت حرفه‌ای و لایو در حوزه نفت، روغن‌موتور و تکنولوژی EMS — از صفر تا تحویل آماده توسعه">
+<style>
+@font-face{font-family:"Vazirmatn";src:url("fonts/Vazirmatn-Regular.ttf");font-weight:400}
+@font-face{font-family:"Vazirmatn";src:url("fonts/Vazirmatn-Bold.ttf");font-weight:700}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:"Vazirmatn",Tahoma,Arial,sans-serif;margin:0;color:#131d28;background:#f4f6f9;line-height:1.85;font-size:16px}
+a{color:#0e3a5d}
+a:focus-visible{outline:3px solid #d9a521;outline-offset:2px;border-radius:4px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+.top{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);border-bottom:1px solid #e3e9f0;backdrop-filter:blur(6px)}
+.top .wrap{display:flex;align-items:center;gap:16px;padding-top:10px;padding-bottom:10px}
+.brand{font-weight:700;color:#0e2f4f;text-decoration:none;white-space:nowrap}
+.brand small{font-weight:400;color:#5b6d82}
+nav{margin-inline-start:auto;display:flex;gap:4px;flex-wrap:wrap}
+nav a{text-decoration:none;color:#0e2f4f;font-size:14px;padding:6px 12px;border-radius:20px}
+nav a:hover{background:#eaf0f7}
+.lang{border:1px solid #c9d4e0;border-radius:20px;padding:5px 14px;font-size:13px;text-decoration:none;color:#0e2f4f;background:#fff;white-space:nowrap}
+.hero{background:#0e2f4f;color:#fff;border-radius:18px;margin:22px 0 0 0;padding:46px 34px 32px 34px}
+.kicker{display:inline-block;font-size:13px;color:#ffd9d9;border:1px solid #ff6b6b;border-radius:20px;padding:4px 16px;margin-bottom:14px}
+.hero h1{font-size:44px;margin:0;line-height:1.4}
+.hero .sub{color:#c3d4e6;font-size:18px;margin:8px 0 12px 0}
+.hero .meta{color:#dce8f5;font-size:14px;line-height:2}
+.hero a{color:#fff}
+.hero .featured{color:#dce8f5;font-size:14px;line-height:2;margin:16px 0 0 0;border-top:1px solid rgba(255,255,255,.22);padding-top:14px}
+.hero .cta{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+.btn{display:inline-block;text-decoration:none;border-radius:12px;padding:10px 22px;font-size:15px;font-weight:700}
+.btn.gold{background:#d9a521;color:#0e2f4f}
+.btn.ghost{border:1px solid rgba(255,255,255,.5);color:#fff}
+.btn.ghost:hover{background:rgba(255,255,255,.12)}
+.sec{background:#fff;border:1px solid #e3e9f0;border-radius:18px;margin:22px 0;padding:30px 28px}
+.sec-label{font-size:13px;color:#8a97a8;margin:0 0 4px 0}
+h2.title{font-size:26px;margin:0 0 6px 0;color:#0e2f4f;line-height:1.6}
+.rule{border:none;border-top:1px solid #e3e9f0;margin:8px 0 12px 0}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+h3.mini{font-size:17px;margin:8px 0 4px 0;color:#0e2f4f}
+ul.clean{margin:4px 18px 8px 0;padding:0}
+ul.clean li{margin:3px 0}
+.tag{display:inline-block;border:1px solid #c9d4e0;color:#0e2f4f;font-size:13px;border-radius:20px;padding:2px 12px;margin:2px 4px 2px 0;white-space:nowrap;background:#fff}
+.ltr{direction:ltr;unicode-bidi:isolate;white-space:nowrap}
+.case-cover{display:block;border:1px solid #dfe6ee;border-radius:12px;overflow:hidden;margin:12px 0}
+.case-cover img{width:100%;height:auto;display:block}
+.live{display:flex;gap:10px;flex-wrap:wrap;margin:10px 0 0 0}
+.live a{display:inline-block;background:#0e2f4f;color:#fff;text-decoration:none;border-radius:10px;padding:8px 18px;font-size:14px;font-weight:700}
+.live a:hover{background:#16486f}
+dl.info{display:grid;grid-template-columns:110px 1fr;gap:0;margin:12px 0;border-top:1px solid #e9eef4}
+dl.info dt{font-weight:700;color:#0e2f4f;padding:8px 0;border-bottom:1px solid #e9eef4}
+dl.info dd{margin:0;padding:8px 0 8px 10px;border-bottom:1px solid #e9eef4}
+.mock{margin:20px 0 0 0}
+.mock img{width:100%;height:auto;display:block;border:1px solid #e9eef4;border-radius:12px;background:#fff}
+.mock .cap{text-align:center;font-size:13px;color:#5b6d82;margin-top:6px}
+.other-grid{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
+.other-grid a{border:1px solid #c9d4e0;border-radius:20px;padding:3px 12px;font-size:13px;text-decoration:none;background:#fff}
+.note{font-size:13px;color:#5b6d82}
+.footer{background:#0e2f4f;color:#fff;border-radius:18px;margin:22px 0 30px 0;padding:36px 30px}
+.footer a{color:#fff}
+.footer .big{font-size:26px;font-weight:700;margin:0 0 10px 0}
+.footer .ln{font-size:15px;line-height:2;color:#dce8f5;margin:2px 0}
+.backtop{display:inline-block;margin:14px 0 0 0;color:#0e2f4f;font-size:14px}
+@media (max-width:720px){
+.hero{padding:32px 20px 24px 20px}
+.hero h1{font-size:32px}
+.cols{grid-template-columns:1fr}
+.sec{padding:22px 18px}
+dl.info{grid-template-columns:1fr}
+dl.info dt{border-bottom:none;padding-bottom:0}
+dl.info dd{padding-top:2px}
+nav{display:none}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header class="top">
+<div class="wrap">
+<a class="brand" href="#top">فرشاد رحمانی <small>— طراح محصول (UI/UX)</small></a>
+<nav aria-label="ناوبری">
+<a href="#about">درباره</a>
+<a href="#nexa">نکسا۲۰</a>
+<a href="#sepahan">سپاهان‌اویل</a>
+<a href="#tappico">تاپیکو</a>
+<a href="#more">سایر کارها</a>
+<a href="#contact">تماس</a>
+</nav>
+<a class="lang" href="en.html">EN</a>
+</div>
+</header>
+
+<main class="wrap" id="top">
+<section class="hero">
+<div class="kicker">طراح محصول (UI/UX) — پورتفولیو ۲۰۲۵</div>
+<h1>فرشاد رحمانی</h1>
+<div class="sub">طراحی سه وب‌سایت حرفه‌ای و لایو در حوزه نفت، روغن‌موتور و تکنولوژی EMS — از صفر تا تحویل آماده توسعه</div>
+<p class="meta">تهران، ایران &nbsp;|&nbsp; موبایل: <a class="ltr" href="tel:+989146555058">09146555058</a> &nbsp;|&nbsp; ایمیل: <a class="ltr" href="mailto:Farshadrahmaniart@gmail.com">Farshadrahmaniart@gmail.com</a> &nbsp;|&nbsp; لینکدین: <a class="ltr" href="https://www.linkedin.com/in/farshadrahmani/">linkedin.com/in/farshadrahmani</a> &nbsp;|&nbsp; دریبل: <a class="ltr" href="https://dribbble.com/FarshadRahmani">dribbble.com/FarshadRahmani</a></p>
+<p class="featured">سه کیس منتخب، هر سه لایو (مجموع ۸۵ صفحه): <a href="https://nexa20.com"><b><span class="ltr">NEXA20.COM</span></b></a> — تکنولوژی مدرن فیتنس <span class="ltr">EMS</span>، ۱۹ صفحه &nbsp;|&nbsp; <a href="https://sepahanoil.com"><b><span class="ltr">SEPAHANOIL.COM</span></b></a> — شرکتی نفتی، ۴۳ صفحه &nbsp;|&nbsp; <a href="https://www.tappico.com"><b><span class="ltr">TAPPICO.COM</span></b></a> — هلدینگ، ۲۳ صفحه</p>
+<div class="cta">
+<a class="btn gold" href="#nexa">دیدن نمونه‌کارها</a>
+<a class="btn ghost" href="mailto:Farshadrahmaniart@gmail.com">دعوت به مصاحبه</a>
+</div>
+</section>
+
+<section class="sec" id="about">
+<div class="sec-label">۰۱ — درباره من</div>
+<h2 class="title">طراحی که تمرکز اصلی‌اش روی کیفیت و کارایی محصول است</h2>
+<hr class="rule">
+<div class="cols">
+<div>
+<h3 class="mini">چه کار می‌کنم</h3>
+<ul class="clean">
+<li>یوزرفلو، وایرفریم و رابط کاربری ریسپانسیو</li>
+<li>معماری اطلاعات برای دسته‌بندی‌های بزرگ محصولات</li>
+<li>طراحی بصری و تعاملی، کامپوننت‌های قابل استفاده مجدد</li>
+<li>هندآف تمیز و همراهی تا انتشار</li>
+</ul>
+</div>
+<div>
+<h3 class="mini">روش کار — ۱٫۵ تا ۳ ماه برای هر پروژه</h3>
+<ul class="clean">
+<li>بریف، بررسی رقبا و اصلاح نقشه سایت</li>
+<li>وایرفریم اولیه، بعد رابط دسکتاپ و موبایل</li>
+<li>فاندیشن، کامپوننت، رابط نهایی و تحویل</li>
+</ul>
+</div>
+</div>
+<p><b>ابزارها:</b> <span class="tag ltr">Figma</span><span class="tag ltr">Adobe XD</span><span class="tag ltr">Photoshop</span><span class="tag ltr">Illustrator</span> &nbsp; فتوشاپ + ایلاستریتور + ویژوال‌های کمکی هوش مصنوعی برای بنرها و تصاویر هر سه سایت. فیگما برای <span class="ltr">NEXA20</span> و <span class="ltr">TAPPICO</span>. ادوبی <span class="ltr">XD</span> برای <span class="ltr">SEPAHANOIL</span>.</p>
+</section>
+
+<section class="sec" id="nexa">
+<div class="sec-label">۰۲ — کیس منتخب</div>
+<h2 class="title"><span class="ltr">NEXA20.COM</span> — تکنولوژی مدرن فیتنس <span class="ltr">EMS</span></h2>
+<p><a href="https://nexa20.com"><b class="ltr">NEXA20.COM</b></a> &nbsp; <span class="tag">UX/UI</span><span class="tag">از صفر</span><span class="tag">۱۹ صفحه</span><span class="tag">۲۰۲۵</span><span class="tag ltr">Figma + Photoshop + Illustrator</span></p>
+<hr class="rule">
+<a class="case-cover" href="https://nexa20.com"><img src="assets/Nexa20.jpg" alt="کاور وب‌سایت نکسا۲۰"></a>
+<div class="live"><a href="https://nexa20.com">مشاهده سایت زنده ↗</a></div>
+<dl class="info">
+<dt>نقش</dt><dd>طراح محصول (UI/UX) — ریسرچ، معماری اطلاعات، وایرفریم، رابط کاربری، هندآف و کنترل کیفیت.</dd>
+<dt>بریف</dt><dd>هیروی متمرکز بر رزرو با فلوی «همین حالا رزرو کن». سایت مارکتینگ ریسپانسیو برای موبایل و دسکتاپ. توضیح ساده <span class="ltr">EMS</span>، معرفی خدمات و هدایت کاربر به رزرو با انتخاب مربی و زمان.</dd>
+<dt>کاربران</dt><dd>ورزشکاران و کاربران علاقه‌مند به تکنولوژی که می‌خواهند در کمترین زمان بیشترین نتیجه را در حوزه ورزش بگیرند.</dd>
+<dt>چه کردم</dt><dd>بنچمارک، نقشه سایت و معماری اطلاعات، وایرفریم، فاندیشن و کامپوننت‌ها، رابط دسکتاپ و موبایل، تحویل آماده توسعه.</dd>
+<dt>تصمیم کلیدی</dt><dd>رزرو سه‌مرحله‌ای با دکمه‌های همیشه در دسترس. معرفی دقیق خدمات، انتخاب مربی و کاربردپذیری بالا. هیروی تیره پر‌انرژی و کنتراست تمیز فرم.</dd>
+<dt>نتیجه</dt><dd>لایو در <a class="ltr" href="https://nexa20.com">NEXA20.COM</a>. نقاط قوت: شفافیت خدمات، منطق رزرو و لحن منطبق با برند.</dd>
+</dl>
+<h3 class="mini">صفحات منتخب — فلوی رزرو، انتخاب مربی و شفافیت خدمات</h3>
+<div class="mock"><img src="assets/nexa-1.png" alt="دسکتاپ بخش رزرو و صفحه رزرو نکسا۲۰"><div class="cap">دسکتاپ — بخش رزرو &nbsp;|&nbsp; دسکتاپ — صفحه رزرو</div></div>
+<div class="mock"><img src="assets/nexa-2.png" alt="انتخاب مربی و موبایل نکسا۲۰"><div class="cap">دسکتاپ — انتخاب مربی &nbsp;|&nbsp; موبایل — ایکس‌بادی &nbsp;|&nbsp; موبایل — تریال</div></div>
+</section>
+
+<section class="sec" id="sepahan">
+<div class="sec-label">۰۳ — کیس منتخب</div>
+<h2 class="title"><span class="ltr">SEPAHANOIL.COM</span> — شرکتی نفت و صنعتی</h2>
+<p><a href="https://sepahanoil.com"><b class="ltr">SEPAHANOIL.COM</b></a> &nbsp; <span class="tag">UX/UI</span><span class="tag">بازطراحی کامل</span><span class="tag">۴۳ صفحه</span><span class="tag">۲۰۲۵</span><span class="tag ltr">Adobe XD + Photoshop + Illustrator</span></p>
+<hr class="rule">
+<a class="case-cover" href="https://sepahanoil.com"><img src="assets/SepahanOil.jpg" alt="کاور وب‌سایت سپاهان‌اویل"></a>
+<div class="live"><a href="https://sepahanoil.com">مشاهده سایت زنده ↗</a></div>
+<dl class="info">
+<dt>نقش</dt><dd>طراح محصول (UI/UX) — معماری اطلاعات، وایرفریم، رابط ریسپانسیو، تحویل و کنترل کیفیت.</dd>
+<dt>بریف</dt><dd>بازطراحی معماری اطلاعات محصولات و اخبار. ساختار شرکتی راست‌چین و اعتماد <span class="ltr">B2B</span>. بازسازی صفحات دسته‌بندی و جزئیات با جدول مشخصات، بازسازی مناقصات و افزودن لندینگ‌ها.</dd>
+<dt>کاربران</dt><dd>خریداران <span class="ltr">B2B</span>، مهندسان، دنبال‌کنندگان اخبار، مناقصات و فرصت‌های شغلی. کاملاً ریسپانسیو.</dd>
+<dt>چه کردم</dt><dd>بررسی رقبا، نقشه سایت و معماری جدید، وایرفریم، فاندیشن، رابط دسکتاپ + موبایل + تبلت، تحویل آماده توسعه.</dd>
+<dt>تصمیم کلیدی</dt><dd>یک پترن دسته‌بندی و یک قالب جزئیات برای دسته‌بندی بسیار بزرگ محصولات. تب‌ها و دسته‌بندی درست برای کاربردپذیری بهتر، جدول‌های تمیز و مسیر کوتاه از لیست تا استعلام.</dd>
+<dt>نتیجه</dt><dd>لایو در <a class="ltr" href="https://sepahanoil.com">SEPAHANOIL.COM</a>. نقاط قوت: دسته‌بندی و کتگوری حرفه‌ای و متناسب با محصولات، ناوبری آسان و راحت سایت.</dd>
+</dl>
+<h3 class="mini">صفحات منتخب — دسته‌بندی و جزئیات، اثبات کار</h3>
+<div class="mock"><img src="assets/sepahan-1.png" alt="دسته‌بندی و جزئیات محصول سپاهان‌اویل"><div class="cap">دسکتاپ — دسته‌بندی محصولات &nbsp;|&nbsp; دسکتاپ — جزئیات محصول</div></div>
+<div class="mock"><img src="assets/sepahan-2.png" alt="نسخه مالی و موبایل سپاهان‌اویل"><div class="cap">دسکتاپ — مالی &nbsp;|&nbsp; موبایل — خانه &nbsp;|&nbsp; موبایل — رسانه</div></div>
+</section>
+
+<section class="sec" id="tappico">
+<div class="sec-label">۰۴ — کیس منتخب</div>
+<h2 class="title"><span class="ltr">TAPPICO.COM</span> — هلدینگ سرمایه‌گذاری پتروشیمی</h2>
+<p><a href="https://www.tappico.com"><b class="ltr">TAPPICO.COM</b></a> &nbsp; <span class="tag">UX/UI</span><span class="tag">بازطراحی کامل</span><span class="tag">۲۳ صفحه</span><span class="tag">۲۰۲۵</span><span class="tag ltr">Figma + Photoshop + Illustrator</span></p>
+<hr class="rule">
+<a class="case-cover" href="https://www.tappico.com"><img src="assets/Tappico.jpg" alt="کاور وب‌سایت تاپیکو"></a>
+<div class="live"><a href="https://www.tappico.com">مشاهده سایت زنده ↗</a></div>
+<dl class="info">
+<dt>نقش</dt><dd>طراح محصول (UI/UX) — ریسرچ، معماری اطلاعات، رابط کاربری، تحویل و کنترل کیفیت.</dd>
+<dt>بریف</dt><dd>ناوبری هلدینگ بین شرکت‌های تابعه همراه با مناقصات. اعتبار در سطح هلدینگ. اصلاح معماری، افزودن صفحات داخلی، فرم‌ها و ماژول‌ها: اخبار، رسانه، ثبت‌نام و گالری.</dd>
+<dt>کاربران</dt><dd>مدیران و کارکنان هلدینگ، دنبال‌کنندگان اخبار، مناقصات و فرصت‌های شغلی. عمدتاً دسکتاپ.</dd>
+<dt>چه کردم</dt><dd>بنچمارک، وایرفریم و معماری جدید، فاندیشن در سطح هلدینگ، رابط نهایی و تحویل آماده توسعه.</dd>
+<dt>تصمیم کلیدی</dt><dd>اینفوگرافیک پرداده با انیمیشن کد فرانت‌اند برای فایل‌های سبک. ساخت المان‌های گرافیکی برگرفته از لوگو.</dd>
+<dt>نتیجه</dt><dd>لایو در <a class="ltr" href="https://www.tappico.com">TAPPICO.COM</a>. نقاط قوت: اینفوگرافیک متحرک و فرم‌های کاربردی متنوع برای بخش‌های مختلف.</dd>
+</dl>
+<h3 class="mini">صفحات منتخب — خانه هلدینگ + اینفوگرافیک متحرک با کد</h3>
+<div class="mock"><img src="assets/tappico-1.png" alt="اینفوگرافیک و تاریخچه تاپیکو"><div class="cap">دسکتاپ — اینفوگرافیک &nbsp;|&nbsp; دسکتاپ — تاریخچه</div></div>
+<div class="mock"><img src="assets/tappico-2.png" alt="اطلاعیه‌ها و موبایل تاپیکو"><div class="cap">دسکتاپ — اطلاعیه‌ها &nbsp;|&nbsp; موبایل — اینفوگرافیک &nbsp;|&nbsp; موبایل — دعوت‌نامه‌ها</div></div>
+</section>
+
+<section class="sec" id="more">
+<div class="sec-label">۰۵ — کارهای بیشتر</div>
+<h2 class="title">سایر کارهای منتخب</h2>
+<hr class="rule">
+<p><b>پلتفرم هوش مصنوعی — تحت <span class="ltr">NDA</span>، به‌زودی.</b> پلتفرم خدمات‌رسان در حوزه‌های مختلف بر پایه هوش مصنوعی، در مرحله نهایی کنترل کیفیت پیش از انتشار. مالکیت کامل <span class="ltr">UX/UI</span>.</p>
+<p><b>طرح‌های منتخب:</b></p>
+<div class="other-grid">
+<a class="ltr" href="https://tacicoholding.ir">TACICOHOLDING.IR</a>
+<a class="ltr" href="https://gharbcement.com">GHARBCEMENT.COM</a>
+<a class="ltr" href="https://neoflam.co.ir">NEOFLAM.CO.IR</a>
+<a class="ltr" href="https://autosheikh.ir">AUTOSHEIKH.IR</a>
+<a class="ltr" href="https://samanaria.org">SAMANARIA.ORG</a>
+<a class="ltr" href="https://loggroupco.com">LOGGROUPCO.COM</a>
+<a class="ltr" href="https://zagrosceram.com">ZAGROSCERAM.COM</a>
+<a class="ltr" href="https://mashinpokhtkaraj.com">MASHINPOKHTKARAJ.COM</a>
+<a class="ltr" href="https://arman-sg.com">ARMAN-SG.COM</a>
+<a class="ltr" href="https://modern-top.com">MODERN-TOP.COM</a>
+<a class="ltr" href="https://sunbama.com">SUNBAMA.COM</a>
+<a class="ltr" href="https://technogomeh.com">TECHNOGOMEH.COM</a>
+<a class="ltr" href="https://parastou.ir">PARASTOU.IR</a>
+<a class="ltr" href="https://golpars.ir">GOLPARS.IR</a>
+<a class="ltr" href="https://parsehpark.com">PARSEHPARK.COM</a>
+<a class="ltr" href="https://irisl.net">IRISL.NET</a>
+<a class="ltr" href="https://mitdco.com">MITDCO.COM</a>
+<a class="ltr" href="https://adic.ir">ADIC.IR</a>
+</div>
+<p class="note"><span class="ltr">SUNBAMA.COM | TECHNOGOMEH.COM</span> — هویت بصری، تصاویر و بخش‌های گرافیکی روی قالب فروشگاهی پیش‌فرض شرکت.</p>
+</section>
+
+<section class="footer" id="contact">
+<p class="big">آماده همکاری هستم — فرشاد رحمانی</p>
+<p class="ln">طراح محصول (UI/UX) | تهران، ایران</p>
+<p class="ln">موبایل: <a class="ltr" href="tel:+989146555058">09146555058</a> | ایمیل: <a class="ltr" href="mailto:Farshadrahmaniart@gmail.com">Farshadrahmaniart@gmail.com</a></p>
+<p class="ln">لینکدین: <a class="ltr" href="https://www.linkedin.com/in/farshadrahmani/">linkedin.com/in/farshadrahmani</a> | دریبل: <a class="ltr" href="https://dribbble.com/FarshadRahmani">dribbble.com/FarshadRahmani</a></p>
+<p class="ln">لایو: <a class="ltr" href="https://nexa20.com">NEXA20.COM</a> | <a class="ltr" href="https://sepahanoil.com">SEPAHANOIL.COM</a> | <a class="ltr" href="https://www.tappico.com">TAPPICO.COM</a></p>
+</section>
+<a class="backtop" href="#top">↑ بازگشت به بالا</a>
+</main>
+</body>
+</html>
