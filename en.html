@@ -58,6 +58,22 @@ dl.info dd{margin:0;padding:8px 0 8px 10px;border-bottom:1px solid #e9eef4}
 .footer .ln{font-size:15px;line-height:1.9;color:#dce8f5;margin:2px 0}
 @media (max-width:720px){.hero{padding:32px 20px}.hero h1{font-size:32px}.cols{grid-template-columns:1fr}.sec{padding:22px 18px}dl.info{grid-template-columns:1fr}dl.info dt{border-bottom:none;padding-bottom:0}nav{display:none}}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+.flow{border:1.5px solid #dfe6ee;border-radius:14px;background:#f6f9fc;padding:16px 18px;margin:16px 0 6px 0;}
+.frow{display:flex;align-items:stretch;gap:8px;}
+.fstep{flex:1;background:#fff;border:1.5px solid #0e2f4f;border-radius:10px;padding:10px 8px;text-align:center;min-width:0;}
+.fstep b{display:block;color:#0e2f4f;font-size:13px;margin-bottom:3px;line-height:1.4;}
+.fstep span{display:block;color:#5b6d82;font-size:12px;line-height:1.5;}
+.fstep.entry{background:#0e2f4f;border-color:#0e2f4f;}
+.fstep.entry b{color:#fff;}
+.fstep.entry span{color:#dce8f5;}
+.fstep.ok{background:#eef6ee;border-color:#2e7d46;}
+.fstep.ok b{color:#1d5c2e;}
+.farr{align-self:center;font-weight:800;color:#0e2f4f;font-size:18px;flex:0 0 auto;}
+.flow-note{font-size:13px;color:#3c4d60;margin:10px 0 0 0;line-height:1.7;}
+.flow-note b{color:#0e2f4f;}
+@media (max-width:720px){.frow{flex-direction:column;}.farr{align-self:center;transform:rotate(90deg);}}
+
 </style>
 </head>
 <body>
@@ -93,9 +109,27 @@ dl.info dd{margin:0;padding:8px 0 8px 10px;border-bottom:1px solid #e9eef4}
 <dt>Brief</dt><dd>Booking-focused hero with Book Now flow. Responsive marketing site for mobile and desktop. Explain EMS simply, present services, drive booking with trainer and time selection.</dd>
 <dt>Users</dt><dd>Athletes and tech-curious users who want maximum results in minimum time in sports.</dd>
 <dt>What I did</dt><dd>Benchmark, sitemap and IA, wireframes, foundations and components, desktop and mobile UI, dev-ready delivery.</dd>
+<dt>User flow</dt><dd>Home / Hero (persistent Book Now CTA) &rarr; Services &rarr; Step 1 service &rarr; Step 2 trainer + time &rarr; Step 3 details &rarr; Success. XBody / Trial join at Step 1.</dd>
 <dt>Key decision</dt><dd>Three-step booking with persistent CTAs. Concise service presentation, trainer selection and high usability. Dark high-energy hero, clean form contrast.</dd>
 <dt>Outcome</dt><dd>Live at <a href="https://nexa20.com">NEXA20.COM</a>. Key strengths: service clarity, booking logic and on-brand language.</dd>
 </dl>
+<h3 class="mini">User flow &mdash; booking-first, three steps to a confirmed booking</h3>
+<div class="flow">
+<div class="frow">
+<div class="fstep entry"><b>Home / Hero</b><span>persistent Book&nbsp;Now CTA</span></div>
+<div class="farr">&rarr;</div>
+<div class="fstep"><b>Services</b><span>EMS explainer + list</span></div>
+<div class="farr">&rarr;</div>
+<div class="fstep"><b>Step 1 &middot; Service</b><span>choose service</span></div>
+<div class="farr">&rarr;</div>
+<div class="fstep"><b>Step 2 &middot; Trainer + Time</b><span>availability check</span></div>
+<div class="farr">&rarr;</div>
+<div class="fstep"><b>Step 3 &middot; Details</b><span>form + confirm</span></div>
+<div class="farr">&rarr;</div>
+<div class="fstep ok"><b>Success</b><span>booking confirmed</span></div>
+</div>
+<p class="flow-note"><b>Branches:</b> XBody / Trial pages join at Step 1 &middot; taken slot &rarr; nearest alternative, never a dead end &middot; inline validation, one action per screen.</p>
+</div>
 <h3 class="mini">Selected screens — booking flow, trainer pick and service clarity</h3>
 <div class="mock"><img src="assets/nexa-1.png" alt="NEXA20 booking desktop"><div class="cap-row"><span>Desktop — Booking section</span><span>Desktop — Booking page</span></div></div>
 <div class="mock"><img src="assets/nexa-2.png" alt="NEXA20 trainer and mobile"><div class="cap-row"><span>Desktop — Pick trainer</span><span>Mobile — XBody</span><span>Mobile — Trial</span></div></div>
@@ -111,9 +145,27 @@ dl.info dd{margin:0;padding:8px 0 8px 10px;border-bottom:1px solid #e9eef4}
 <dt>Brief</dt><dd>Product and news IA redesign. RTL corporate structure, B2B trust. Rebuild category and detail pages with spec tables, rebuild tenders, add landings.</dd>
 <dt>Users</dt><dd>B2B buyers, plant engineers, followers of news, tenders and careers. Full responsive.</dd>
 <dt>What I did</dt><dd>Competitor review, new sitemap and IA, wireframes, foundations, desktop + mobile + tablet UI, dev-ready delivery.</dd>
+<dt>User flow</dt><dd>Home &rarr; Products &rarr; Category (tabs + filters) &rarr; Product detail (spec tables) &rarr; Inquiry &rarr; Success. Tenders and News run parallel.</dd>
 <dt>Key decision</dt><dd>One category pattern and one detail template for very large product categories. Tabbed landings with clear categories for better usability, clean spec tables, short path from list to inquiry.</dd>
 <dt>Outcome</dt><dd>Live at <a href="https://sepahanoil.com">SEPAHANOIL.COM</a>. Key strengths: professional product-tailored categories, easy and smooth navigation.</dd>
 </dl>
+<h3 class="mini">User flow &mdash; list &rarr; detail &rarr; inquiry in three clicks</h3>
+<div class="flow">
+<div class="frow">
+<div class="fstep entry"><b>Home</b><span>entry + search</span></div>
+<div class="farr">&rarr;</div>
+<div class="fstep"><b>Products</b><span>category landings</span></div>
+<div class="farr">&rarr;</div>
+<div class="fstep"><b>Category</b><span>tabs + filters &middot; list</span></div>
+<div class="farr">&rarr;</div>
+<div class="fstep"><b>Product detail</b><span>spec tables + variants</span></div>
+<div class="farr">&rarr;</div>
+<div class="fstep"><b>Inquiry</b><span>short form</span></div>
+<div class="farr">&rarr;</div>
+<div class="fstep ok"><b>Success</b><span>request sent</span></div>
+</div>
+<p class="flow-note"><b>Parallel paths:</b> Tenders list &rarr; detail &rarr; documents &middot; News / Media list &rarr; detail. One category pattern + one detail template; no deep nesting.</p>
+</div>
 <h3 class="mini">Selected screens — category and detail are the proof</h3>
 <div class="mock"><img src="assets/sepahan-1.png" alt="SepahanOil category"><div class="cap-row"><span>Desktop — Product category</span><span>Desktop — Product details</span></div></div>
 <div class="mock"><img src="assets/sepahan-2.png" alt="SepahanOil financial mobile"><div class="cap-row"><span>Desktop — Financial</span><span>Mobile — Home</span><span>Mobile — Media</span></div></div>
@@ -129,9 +181,25 @@ dl.info dd{margin:0;padding:8px 0 8px 10px;border-bottom:1px solid #e9eef4}
 <dt>Brief</dt><dd>Holding navigation across subsidiaries with tenders. Holding-level credibility. Fix IA, add inner pages, forms and modules: news, media, registration, gallery.</dd>
 <dt>Users</dt><dd>Holding managers and staff, followers of news, tenders and careers. Mostly desktop.</dd>
 <dt>What I did</dt><dd>Benchmark, new wireframes and IA, holding-grade foundations, final UI, dev-ready delivery.</dd>
+<dt>User flow</dt><dd>Home (infographic + holding nav) &rarr; Subsidiaries &rarr; Company detail &rarr; Forms &rarr; Success. Same nav drives all modules.</dd>
 <dt>Key decision</dt><dd>Data-rich infographic animated with front-end code for light files. Graphic elements derived from the logo.</dd>
 <dt>Outcome</dt><dd>Live at <a href="https://www.tappico.com">TAPPICO.COM</a>. Key strengths: motion infographic and practical forms for different sections.</dd>
 </dl>
+<h3 class="mini">User flow &mdash; holding nav across subsidiaries and modules</h3>
+<div class="flow">
+<div class="frow">
+<div class="fstep entry"><b>Home</b><span>infographic + holding nav</span></div>
+<div class="farr">&rarr;</div>
+<div class="fstep"><b>Subsidiaries</b><span>companies list</span></div>
+<div class="farr">&rarr;</div>
+<div class="fstep"><b>Company detail</b><span>profile + links</span></div>
+<div class="farr">&rarr;</div>
+<div class="fstep"><b>Forms</b><span>registration &middot; contact &middot; tender</span></div>
+<div class="farr">&rarr;</div>
+<div class="fstep ok"><b>Success</b><span>submitted</span></div>
+</div>
+<p class="flow-note"><b>Modules on the same nav:</b> History &middot; code-animated infographic &middot; News &middot; Media &middot; Gallery &middot; Announcements / Tenders. One holding-grade pattern for every subsidiary.</p>
+</div>
 <h3 class="mini">Selected screens — holding home + code-animated infographic</h3>
 <div class="mock"><img src="assets/tappico-1.png" alt="Tappico infographic"><div class="cap-row"><span>Desktop — Infographic</span><span>Desktop — History</span></div></div>
 <div class="mock"><img src="assets/tappico-2.png" alt="Tappico announcements"><div class="cap-row"><span>Desktop — Announcement</span><span>Mobile — Infographic</span><span>Mobile — Invitations</span></div></div>

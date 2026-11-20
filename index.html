@@ -74,6 +74,27 @@ dl.info dd{padding-top:2px}
 nav{display:none}
 }
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+.flow{border:1.5px solid #dfe6ee;border-radius:14px;background:#f6f9fc;padding:16px 18px;margin:16px 0 6px 0;}
+.frow{display:flex;align-items:stretch;gap:8px;}
+.fstep{flex:1;background:#fff;border:1.5px solid #0e2f4f;border-radius:10px;padding:10px 8px;text-align:center;min-width:0;}
+.fstep b{display:block;color:#0e2f4f;font-size:13px;margin-bottom:3px;line-height:1.4;}
+.fstep span{display:block;color:#5b6d82;font-size:12px;line-height:1.5;}
+.fstep.entry{background:#0e2f4f;border-color:#0e2f4f;}
+.fstep.entry b{color:#fff;}
+.fstep.entry span{color:#dce8f5;}
+.fstep.ok{background:#eef6ee;border-color:#2e7d46;}
+.fstep.ok b{color:#1d5c2e;}
+.farr{align-self:center;font-weight:800;color:#0e2f4f;font-size:18px;flex:0 0 auto;}
+.flow-note{font-size:13px;color:#3c4d60;margin:10px 0 0 0;line-height:1.7;}
+.flow-note b{color:#0e2f4f;}
+@media (max-width:720px){.frow{flex-direction:column;}.farr{align-self:center;transform:rotate(-90deg);}}
+
+.fstep b{font-size:14px;line-height:1.8;}
+.fstep span{font-size:13px;line-height:1.9;}
+.flow-note{font-size:13.5px;line-height:2;}
+@media (max-width:720px){.farr{transform:rotate(-90deg);}}
+
 </style>
 </head>
 <body>
@@ -143,9 +164,27 @@ nav{display:none}
 <dt>بریف</dt><dd>هیروی متمرکز بر رزرو با فلوی «همین حالا رزرو کن». سایت مارکتینگ ریسپانسیو برای موبایل و دسکتاپ. توضیح ساده <span class="ltr">EMS</span>، معرفی خدمات و هدایت کاربر به رزرو با انتخاب مربی و زمان.</dd>
 <dt>کاربران</dt><dd>ورزشکاران و کاربران علاقه‌مند به تکنولوژی که می‌خواهند در کمترین زمان بیشترین نتیجه را در حوزه ورزش بگیرند.</dd>
 <dt>چه کردم</dt><dd>بنچمارک، نقشه سایت و معماری اطلاعات، وایرفریم، فاندیشن و کامپوننت‌ها، رابط دسکتاپ و موبایل، تحویل آماده توسعه.</dd>
+<dt>یوزرفلو</dt><dd>خانه / هیرو (دکمه ثابت رزرو) ← خدمات ← قدم ۱ خدمت ← قدم ۲ مربی و زمان ← قدم ۳ مشخصات ← موفقیت.</dd>
 <dt>تصمیم کلیدی</dt><dd>رزرو سه‌مرحله‌ای با دکمه‌های همیشه در دسترس. معرفی دقیق خدمات، انتخاب مربی و کاربردپذیری بالا. هیروی تیره پر‌انرژی و کنتراست تمیز فرم.</dd>
 <dt>نتیجه</dt><dd>لایو در <a class="ltr" href="https://nexa20.com">NEXA20.COM</a>. نقاط قوت: شفافیت خدمات، منطق رزرو و لحن منطبق با برند.</dd>
 </dl>
+<h3 class="mini">یوزرفلو — رزرومحور، سه قدم تا رزرو قطعی</h3>
+<div class="flow">
+<div class="frow">
+<div class="fstep entry"><b>خانه / هیرو</b><span>دکمه ثابت رزرو</span></div>
+<div class="farr">←</div>
+<div class="fstep"><b>خدمات</b><span>معرفی EMS + لیست</span></div>
+<div class="farr">←</div>
+<div class="fstep"><b>قدم ۱ · خدمت</b><span>انتخاب خدمت</span></div>
+<div class="farr">←</div>
+<div class="fstep"><b>قدم ۲ · مربی و زمان</b><span>بررسی ظرفیت</span></div>
+<div class="farr">←</div>
+<div class="fstep"><b>قدم ۳ · مشخصات</b><span>فرم + تایید</span></div>
+<div class="farr">←</div>
+<div class="fstep ok"><b>موفقیت</b><span>رزرو ثبت شد</span></div>
+</div>
+<p class="flow-note"><b>شاخه‌ها:</b> صفحات ایکس‌بادی / تریال از قدم ۱ وارد می‌شوند · ظرفیت پر ← نزدیک‌ترین گزینه جایگزین، بدون بن‌بست · اعتبارسنجی درون‌فرمی، هر صفحه یک اکشن.</p>
+</div>
 <h3 class="mini">صفحات منتخب — فلوی رزرو، انتخاب مربی و شفافیت خدمات</h3>
 <div class="mock"><img src="assets/nexa-1.png" alt="دسکتاپ بخش رزرو و صفحه رزرو نکسا۲۰"><div class="cap-row" dir="ltr"><span>دسکتاپ — بخش رزرو</span><span>دسکتاپ — صفحه رزرو</span></div></div>
 <div class="mock"><img src="assets/nexa-2.png" alt="انتخاب مربی و موبایل نکسا۲۰"><div class="cap-row" dir="ltr"><span>دسکتاپ — انتخاب مربی</span><span>موبایل — ایکس‌بادی</span><span>موبایل — تریال</span></div></div>
@@ -163,9 +202,27 @@ nav{display:none}
 <dt>بریف</dt><dd>بازطراحی معماری اطلاعات محصولات و اخبار. ساختار شرکتی راست‌چین و اعتماد <span class="ltr">B2B</span>. بازسازی صفحات دسته‌بندی و جزئیات با جدول مشخصات، بازسازی مناقصات و افزودن لندینگ‌ها.</dd>
 <dt>کاربران</dt><dd>خریداران <span class="ltr">B2B</span>، مهندسان، دنبال‌کنندگان اخبار، مناقصات و فرصت‌های شغلی. کاملاً ریسپانسیو.</dd>
 <dt>چه کردم</dt><dd>بررسی رقبا، نقشه سایت و معماری جدید، وایرفریم، فاندیشن، رابط دسکتاپ + موبایل + تبلت، تحویل آماده توسعه.</dd>
+<dt>یوزرفلو</dt><dd>خانه ← محصولات ← دسته‌بندی (تب و فیلتر) ← جزئیات (جدول مشخصات) ← استعلام ← موفقیت.</dd>
 <dt>تصمیم کلیدی</dt><dd>یک پترن دسته‌بندی و یک قالب جزئیات برای دسته‌بندی بسیار بزرگ محصولات. تب‌ها و دسته‌بندی درست برای کاربردپذیری بهتر، جدول‌های تمیز و مسیر کوتاه از لیست تا استعلام.</dd>
 <dt>نتیجه</dt><dd>لایو در <a class="ltr" href="https://sepahanoil.com">SEPAHANOIL.COM</a>. نقاط قوت: دسته‌بندی و کتگوری حرفه‌ای و متناسب با محصولات، ناوبری آسان و راحت سایت.</dd>
 </dl>
+<h3 class="mini">یوزرفلو — لیست ← جزئیات ← استعلام در سه کلیک</h3>
+<div class="flow">
+<div class="frow">
+<div class="fstep entry"><b>خانه</b><span>ورود + جست‌وجو</span></div>
+<div class="farr">←</div>
+<div class="fstep"><b>محصولات</b><span>لندینگ دسته‌ها</span></div>
+<div class="farr">←</div>
+<div class="fstep"><b>دسته‌بندی</b><span>تب و فیلتر · لیست</span></div>
+<div class="farr">←</div>
+<div class="fstep"><b>جزئیات محصول</b><span>جدول مشخصات + واریانت</span></div>
+<div class="farr">←</div>
+<div class="fstep"><b>استعلام</b><span>فرم کوتاه</span></div>
+<div class="farr">←</div>
+<div class="fstep ok"><b>موفقیت</b><span>درخواست ارسال شد</span></div>
+</div>
+<p class="flow-note"><b>مسیرهای موازی:</b> مناقصات ← جزئیات ← اسناد · اخبار / رسانه ← جزئیات. یک پترن دسته‌بندی + یک قالب جزئیات؛ بدون تودرتویی عمیق.</p>
+</div>
 <h3 class="mini">صفحات منتخب — دسته‌بندی و جزئیات، اثبات کار</h3>
 <div class="mock"><img src="assets/sepahan-1.png" alt="دسته‌بندی و جزئیات محصول سپاهان‌اویل"><div class="cap-row" dir="ltr"><span>دسکتاپ — دسته‌بندی محصولات</span><span>دسکتاپ — جزئیات محصول</span></div></div>
 <div class="mock"><img src="assets/sepahan-2.png" alt="نسخه مالی و موبایل سپاهان‌اویل"><div class="cap-row" dir="ltr"><span>دسکتاپ — مالی</span><span>موبایل — خانه</span><span>موبایل — رسانه</span></div></div>
@@ -183,9 +240,25 @@ nav{display:none}
 <dt>بریف</dt><dd>ناوبری هلدینگ بین شرکت‌های تابعه همراه با مناقصات. اعتبار در سطح هلدینگ. اصلاح معماری، افزودن صفحات داخلی، فرم‌ها و ماژول‌ها: اخبار، رسانه، ثبت‌نام و گالری.</dd>
 <dt>کاربران</dt><dd>مدیران و کارکنان هلدینگ، دنبال‌کنندگان اخبار، مناقصات و فرصت‌های شغلی. عمدتاً دسکتاپ.</dd>
 <dt>چه کردم</dt><dd>بنچمارک، وایرفریم و معماری جدید، فاندیشن در سطح هلدینگ، رابط نهایی و تحویل آماده توسعه.</dd>
+<dt>یوزرفلو</dt><dd>خانه (اینفوگرافیک + ناوبری هلدینگ) ← شرکت‌ها ← جزئیات شرکت ← فرم‌ها ← موفقیت.</dd>
 <dt>تصمیم کلیدی</dt><dd>اینفوگرافیک پرداده با انیمیشن کد فرانت‌اند برای فایل‌های سبک. ساخت المان‌های گرافیکی برگرفته از لوگو.</dd>
 <dt>نتیجه</dt><dd>لایو در <a class="ltr" href="https://www.tappico.com">TAPPICO.COM</a>. نقاط قوت: اینفوگرافیک متحرک و فرم‌های کاربردی متنوع برای بخش‌های مختلف.</dd>
 </dl>
+<h3 class="mini">یوزرفلو — ناوبری هلدینگ بین شرکت‌ها و ماژول‌ها</h3>
+<div class="flow">
+<div class="frow">
+<div class="fstep entry"><b>خانه</b><span>اینفوگرافیک + ناوبری هلدینگ</span></div>
+<div class="farr">←</div>
+<div class="fstep"><b>شرکت‌ها</b><span>لیست شرکت‌های تابعه</span></div>
+<div class="farr">←</div>
+<div class="fstep"><b>جزئیات شرکت</b><span>پروفایل + لینک‌ها</span></div>
+<div class="farr">←</div>
+<div class="fstep"><b>فرم‌ها</b><span>ثبت‌نام · تماس · مناقصه</span></div>
+<div class="farr">←</div>
+<div class="fstep ok"><b>موفقیت</b><span>ثبت شد</span></div>
+</div>
+<p class="flow-note"><b>ماژول‌ها روی همان ناوبری:</b> تاریخچه · اینفوگرافیک متحرک با کد · اخبار · رسانه · گالری · اطلاعیه‌ها / مناقصات.</p>
+</div>
 <h3 class="mini">صفحات منتخب — خانه هلدینگ + اینفوگرافیک متحرک با کد</h3>
 <div class="mock"><img src="assets/tappico-1.png" alt="اینفوگرافیک و تاریخچه تاپیکو"><div class="cap-row" dir="ltr"><span>دسکتاپ — اینفوگرافیک</span><span>دسکتاپ — تاریخچه</span></div></div>
 <div class="mock"><img src="assets/tappico-2.png" alt="اطلاعیه‌ها و موبایل تاپیکو"><div class="cap-row" dir="ltr"><span>دسکتاپ — اطلاعیه‌ها</span><span>موبایل — اینفوگرافیک</span><span>موبایل — دعوت‌نامه‌ها</span></div></div>
